@@ -24,8 +24,8 @@ function Home() {
       <Flavours />
       <Values />
       <Story />
-      <Reviews />
-      <Instagram />
+      {/* <Reviews /> */}
+      {/* <Instagram /> */}
     </main>
   );
 }
