@@ -1660,7 +1660,7 @@ main,
   .product-card, .product-card--wide, .product-card:nth-child(3) { grid-column: auto; margin-top: 0; }
   .product-card { min-height: 29rem; }
   .flavour-chapter { display: flex; flex-direction: column; min-height: auto; padding: 4.5rem 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.15); }
-  .flavour-mobile-title { text-align: center; margin-bottom: 2rem; color: #fff; font-size: 1.1rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+  .flavour-mobile-title { text-align: center; margin-bottom: 2rem; color: #fff; font-size: 1.1rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase;  display: block; width: 100%; margin: 0 auto 2rem; }
   .flavour-chapter h2.mobile-only { order: 1; font-size: 2.8rem; margin-bottom: 1rem; color: var(--white); font-family: Georgia, "Times New Roman", serif; }
   .flavour-chapter span { order: 2; margin-bottom: 1rem; font-size: 1rem; color: rgba(255, 255, 255, 0.7); }
   .flavour-chapter h3 { display: none; }
@@ -1692,6 +1692,7 @@ main,
 }
 
 #root { display: contents; }
+
 
 
 
