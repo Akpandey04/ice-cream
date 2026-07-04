@@ -13,7 +13,7 @@ export default function Flavours() {
       </div>
       <div className="flavour-scroll">
         <p className="eyebrow mobile-only flavour-mobile-title">Signature Flavours</p>
-        {flavours.map((f, i) => (
+        {flavours.map(f => (
           <article key={f.id} className="flavour-chapter" data-flavour={f.id}>
             <h2 className="mobile-only">{f.stageHeading}</h2>
             <span>{f.number}</span>
