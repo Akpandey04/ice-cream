@@ -1598,7 +1598,7 @@ main,
 }
 
 .mobile-only { display: none !important; }
-.desktop-only { display: block; }
+
 @media (max-width: 1080px) {
   .hero {
     padding-top: 7.5rem;
@@ -1720,6 +1720,7 @@ main,
 }
 
 #root { display: contents; }
+
 
 
 
