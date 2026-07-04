@@ -12,8 +12,8 @@ import Collections from "./sections/Collections";
 import Flavours from "./sections/Flavours";
 import Values from "./sections/Values";
 import Story from "./sections/Story";
-import Reviews from "./sections/Reviews";
-import Instagram from "./sections/Instagram";
+// import Reviews from "./sections/Reviews";
+// import Instagram from "./sections/Instagram";
 import Footer from "./components/Footer";
 
 function Home() {
