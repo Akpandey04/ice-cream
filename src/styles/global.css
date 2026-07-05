@@ -367,7 +367,7 @@ main,
   align-items: center;
   text-align: center;
   width: 100%;
-}
+  transform: translateY(-2rem);`n}
 
   .hero-bg {
     position: absolute;
@@ -419,6 +419,12 @@ main,
   text-transform: uppercase;
 }
 
+.hero__eyebrow {
+  color: #d14d72;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
 .hero h1,
 .section-heading h2,
 .flavour-stage h2,
@@ -432,7 +438,7 @@ main,
 .hero h1 {
   max-width: 850px;
   color: #1a1a1a;
-  font-size: clamp(2.8rem, 6.2vw, 5.4rem);
+  font-size: clamp(2.6rem, 5.7vw, 4.8rem);
   font-weight: 900;
   line-height: 1.1;
 }
@@ -1651,7 +1657,7 @@ main,
   
   /* Hero Refinements */
   .hero { padding-top: 5rem; padding-bottom: 8.5rem; } /* Shifted up ~50px */
-  .hero h1 { font-size: clamp(2.7rem, 11vw, 3.4rem); line-height: 1.15; margin-bottom: 1rem; }
+  .hero h1 { font-size: clamp(2.5rem, 10vw, 3.1rem); line-height: 1.15; margin-bottom: 1rem; }
   .hero__text { font-size: 1.25rem; font-weight: 700; margin-top: 1.5rem; line-height: 1.6; max-width: 100%; }
   .hero__actions { margin-top: 3.5rem; gap: 1.2rem; flex-direction: column; width: 100%; align-items: center; }
   .button { width: 100%; max-width: 22rem; min-height: 3.2rem; }
@@ -1758,6 +1764,8 @@ main,
   letter-spacing: 0.05em;
   color: var(--raspberry);
 }
+
+
 
 
 
