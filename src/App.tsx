@@ -11,7 +11,7 @@ import Hero from "./sections/Hero";
 import Collections from "./sections/Collections";
 import Flavours from "./sections/Flavours";
 import Values from "./sections/Values";
-import Story from "./sections/Story";
+// import Story from "./sections/Story";
 // import Reviews from "./sections/Reviews";
 // import Instagram from "./sections/Instagram";
 import Footer from "./components/Footer";
@@ -23,7 +23,7 @@ function Home() {
       <Collections />
       <Flavours />
       <Values />
-      <Story />
+      {/* <Story /> */}
       {/* <Reviews /> */}
       {/* <Instagram /> */}
     </main>
