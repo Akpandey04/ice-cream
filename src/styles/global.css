@@ -387,7 +387,10 @@ main,
   object-fit: contain;
   object-position: center 60%;
   opacity: 1;
+  filter: brightness(1.08) contrast(1.05);
   -webkit-filter: brightness(1.08) contrast(1.05);
+  mask-image: radial-gradient(ellipse closest-side, black 45%, transparent 95%);
+  -webkit-mask-image: radial-gradient(ellipse closest-side, black 45%, transparent 95%);
   pointer-events: none;
   transform-origin: center center;
   will-change: transform, opacity;
@@ -1649,7 +1652,7 @@ main,
   .hero__actions { margin-top: 3.5rem; gap: 1.2rem; flex-direction: column; width: 100%; align-items: center; }
   .button { width: 100%; max-width: 22rem; min-height: 3.2rem; }
   
-  .hero-bg__video { opacity: 1; width: 100%; height: 100%; object-fit: contain; top: 48%; left: 50%; transform: translate(-50%, -50%) scale(1.1); object-position: center center; }
+  .hero-bg__video { opacity: 1; width: 100%; height: 100%; object-fit: contain; top: 48%; left: 50%; transform: translate(-50%, -50%) scale(1.1); object-position: center center; mask-image: radial-gradient(ellipse closest-side, black 45%, transparent 95%); -webkit-mask-image: radial-gradient(ellipse closest-side, black 45%, transparent 95%); }
 
   .section-heading h2, .story__copy h2 { font-size: 2.5rem; }
   .collection { padding-top: 6rem; padding-bottom: 6rem; }
@@ -1751,3 +1754,4 @@ main,
   letter-spacing: 0.05em;
   color: var(--raspberry);
 }
+
