@@ -387,8 +387,8 @@ main,
   object-fit: contain;
   object-position: center 60%;
   opacity: 1;
-  mask-image: radial-gradient(ellipse closest-side, black 40%, transparent 90%);
-  -webkit-mask-image: radial-gradient(ellipse closest-side, black 40%, transparent 90%);
+  mask-image: radial-gradient(ellipse closest-side, black 70%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse closest-side, black 70%, transparent 100%);
   filter: brightness(1.08) contrast(1.05);
   pointer-events: none;
   transform-origin: center center;
@@ -402,7 +402,7 @@ main,
     linear-gradient(to bottom, transparent 70%, #fff8ef 100%),
     radial-gradient(circle at center, rgba(255, 248, 239, 0.25) 0%, transparent 40%),
     radial-gradient(circle at center, transparent 20%, #fde4dd 80%);
-  opacity: 0.9;
+  opacity: 0.3;
 }
 
 .eyebrow {
@@ -1458,7 +1458,7 @@ main,
   }
   50% {
     transform: translate3d(0.7rem, -1.3rem, 0) scale(1.2);
-    opacity: 0.9;
+    opacity: 0.3;
   }
 }
 
@@ -1736,6 +1736,7 @@ main,
 .review-modal { position: fixed; top: 50%; left: 50%; z-index: 1001; width: min(400px, 90vw); background: #fff8ef; padding: 2.5rem; border-radius: var(--radius); box-shadow: 0 24px 48px rgba(0,0,0,0.2); display: flex; flex-direction: column; }
 .modal-close { position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; cursor: pointer; color: var(--ink); padding: 0.5rem; }
 .modal-text { font-size: 1.15rem; line-height: 1.7; margin: 1.5rem 0; color: var(--muted); }
+
 
 
 
