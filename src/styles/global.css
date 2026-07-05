@@ -367,7 +367,7 @@ main,
   align-items: center;
   text-align: center;
   width: 100%;
-  transform: translateY(-2rem);`n}
+  transform: translateY(-2rem);}
 
   .hero-bg {
     position: absolute;
@@ -1764,6 +1764,8 @@ main,
   letter-spacing: 0.05em;
   color: var(--raspberry);
 }
+
+
 
 
 
