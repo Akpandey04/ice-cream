@@ -374,7 +374,7 @@ main,
     inset: 0;
     z-index: -2;
     pointer-events: none;
-    background-color: #ffe3e8; /* Pastel pink base */
+    background-color: #fcd2da; /* Slightly darker pastel pink */
     background-image: 
       radial-gradient(circle at 50% 50%, rgba(243, 221, 212, 0.4) 0%, transparent 60%),
       radial-gradient(circle at 75% 30%, rgba(239, 207, 195, 0.3) 0%, transparent 50%),
