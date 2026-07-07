@@ -442,13 +442,13 @@ main,
     font-size: clamp(2.6rem, 5.7vw, 4.8rem);
     font-weight: 900;
     line-height: 1.1;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     white-space: pre-line;
   }
 
 .hero__text {
     max-width: 600px;
-    margin: 4.25rem 0 0;
+    margin: 2.75rem 0 0;
     color: #3F342E;
     text-shadow: 0 2px 10px rgba(255, 248, 239, 0.6);
     font-weight: 600;
@@ -1662,8 +1662,8 @@ main,
   /* Hero Refinements */
   .hero__copy { position: relative; top: -3.5rem; }
   .hero { padding-top: 5rem; padding-bottom: 8.5rem; } /* Shifted up ~50px */
-  .hero h1 { font-size: clamp(2.5rem, 10vw, 3.1rem); line-height: 1.15; margin-bottom: 1rem; margin-top: 1.5rem; white-space: pre-line; }
-  .hero__text { font-size: 1.25rem; font-weight: 600; margin-top: 2.25rem; line-height: 1.8; letter-spacing: 0.5px; max-width: 100%; color: #3F342E; }
+  .hero h1 { font-size: clamp(2.5rem, 10vw, 3.1rem); line-height: 1.15; margin-bottom: 1rem; margin-top: 3rem; white-space: pre-line; }
+  .hero__text { font-size: 1.25rem; font-weight: 600; margin-top: 0.75rem; line-height: 1.8; letter-spacing: 0.5px; max-width: 100%; color: #3F342E; }
   .hero__actions { margin-top: 13.5rem; gap: 1.2rem; flex-direction: column; width: 100%; align-items: center; }
   .button { width: 100%; max-width: 22rem; min-height: 3.2rem; }
   
