@@ -459,7 +459,7 @@ main,
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 5.5rem;
+  margin-top: 16rem;
 }
 
 .button {
@@ -1661,7 +1661,7 @@ main,
   .hero { padding-top: 5rem; padding-bottom: 8.5rem; } /* Shifted up ~50px */
   .hero h1 { font-size: clamp(2.5rem, 10vw, 3.1rem); line-height: 1.15; margin-bottom: 1rem; }
   .hero__text { font-size: 1.25rem; font-weight: 700; margin-top: 1.5rem; line-height: 1.6; max-width: 100%; }
-  .hero__actions { margin-top: 3.5rem; gap: 1.2rem; flex-direction: column; width: 100%; align-items: center; }
+  .hero__actions { margin-top: 12rem; gap: 1.2rem; flex-direction: column; width: 100%; align-items: center; }
   .button { width: 100%; max-width: 22rem; min-height: 3.2rem; }
   
   .hero-bg__video { opacity: 1; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; top: 48%; left: 50%; transform: translate(-50%, -50%); object-position: center center; mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%); mask-composite: intersect; -webkit-mask-composite: source-in; }
@@ -1766,6 +1766,8 @@ main,
   letter-spacing: 0.05em;
   color: var(--raspberry);
 }
+
+
 
 
 
