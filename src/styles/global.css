@@ -367,7 +367,7 @@ main,
     align-items: center;
     text-align: center;
     width: 100%;
-    transform: translateY(-6rem);
+    margin-top: -3.5rem;
   }
 
   .hero-bg {
