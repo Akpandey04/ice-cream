@@ -361,13 +361,14 @@ main,
   isolation: isolate;
 }
 
-.hero__copy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  transform: translateY(-2rem);}
+  .hero__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-6rem);
+  }
 
   .hero-bg {
     position: absolute;
