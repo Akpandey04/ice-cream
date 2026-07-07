@@ -367,7 +367,7 @@ main,
     align-items: center;
     text-align: center;
     width: 100%;
-    margin-top: -3.5rem;
+    position: relative; top: -3.5rem;
   }
 
   .hero-bg {
@@ -1657,7 +1657,7 @@ main,
   .section-panel { padding: 6rem 1.5rem; }
   
   /* Hero Refinements */
-  .hero__copy { margin-top: -6rem; }
+  .hero__copy { position: relative; top: -6.5rem; }
   .hero { padding-top: 5rem; padding-bottom: 8.5rem; } /* Shifted up ~50px */
   .hero h1 { font-size: clamp(2.5rem, 10vw, 3.1rem); line-height: 1.15; margin-bottom: 1rem; }
   .hero__text { font-size: 1.25rem; font-weight: 700; margin-top: 1.5rem; line-height: 1.6; max-width: 100%; }
@@ -1766,6 +1766,7 @@ main,
   letter-spacing: 0.05em;
   color: var(--raspberry);
 }
+
 
 
 
