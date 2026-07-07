@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="hero-bg__overlay"></div>
       </div>
       <div className="hero__copy reveal">
-        <p className="eyebrow hero__eyebrow">{heroData.eyebrow}</p>
+        {/* <p className="eyebrow hero__eyebrow">{heroData.eyebrow}</p> */}
         <h1>{heroData.heading}</h1>
         <p className="hero__text">
           {heroData.description}
