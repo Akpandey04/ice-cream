@@ -2072,7 +2072,7 @@ main,
     gap: 0.8rem !important; 
     align-items: center !important; 
     justify-content: center !important;
-    margin: 3.5rem auto 1.5rem !important; /* Shifted downwards to clear larger image */
+    margin: 4.5rem auto 1.5rem !important; /* Shifted further downwards to clear larger image */
     padding: 0 !important; 
     width: 100% !important;
     max-width: 450px !important;
