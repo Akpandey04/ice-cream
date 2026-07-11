@@ -1860,10 +1860,11 @@ main,
   .flavour-pack { display: none; }
   .story__visual { min-height: 24rem; }
   .review-card, .review-card--lift { min-height: auto; transform: none; }
-  .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
-  .footer-brand, .social-links { justify-content: center; }
-  .footer-column ul, .footer-column address { justify-items: center; }
-  .footer-newsletter { text-align: center; }
+  .footer-grid { grid-template-columns: 1fr 1fr; text-align: left; gap: 2rem; }
+  .footer-brand-column, .footer-social-column { grid-column: 1 / -1; }
+  .footer-brand, .social-links { justify-content: flex-start; }
+  .footer-column ul, .footer-column address { justify-items: start; }
+  .footer-newsletter { text-align: left; }
   .footer-signup-form__row { flex-direction: column; align-items: stretch; }
   .footer-signup-form input, .footer-signup-form button { width: 100%; }
   .footer-bottom { flex-direction: column; text-align: center; gap: 1.5rem; }
