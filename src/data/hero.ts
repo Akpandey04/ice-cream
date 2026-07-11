@@ -3,5 +3,5 @@ export const heroData = {
   heading: "Every Scoop is a\nCelebration",
   description: "Crafted with premium ingredients and unforgettable flavours.",
   primaryButton: { label: "Explore Collection", link: "#collection" },
-  secondaryButton: { label: "Our Story", link: "#story" }
+  secondaryButton: { label: "Our Story", link: "/about" }
 };

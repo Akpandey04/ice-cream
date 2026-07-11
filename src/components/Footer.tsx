@@ -1,4 +1,5 @@
 import { footer } from "../data/footer";
+import logo from "../assets/images/logo.png";
 
 export default function Footer() {
   return (
@@ -6,9 +7,11 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-grid">
           <section className="footer-brand-column" aria-label="Brand information">
-            <a className="brand footer-brand" href="#hero" aria-label="Sundae Atelier home">
-              <span className="brand__scoop"></span>
-              <span>Sundae Atelier</span>
+            <a className="brand footer-brand" href="#hero" aria-label="ScoopyBloom home">
+              <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#FFF6F2', borderRadius: '50%', padding: '0', boxShadow: '0 6px 16px rgba(67, 35, 29, 0.05)', border: '1px solid rgba(255, 255, 255, 0.6)' }}>
+                <img src={logo} alt="ScoopyBloom Logo" style={{ width: '4rem', height: '4rem', objectFit: 'contain' }} />
+              </span>
+              <span>ScoopyBloom</span>
             </a>
             <p>{footer.brandText}</p>
           </section>
@@ -31,9 +34,10 @@ export default function Footer() {
               <a href={`tel:${footer.contact.phone.replace(/\s/g, '')}`}>{footer.contact.phone}</a>
               <span>Address</span>
               <p>
-                {footer.contact.address.map((line, i) => (
-                  <span key={i}>{line}<br /></span>
-                ))}
+                {footer.contact.address.map((line, i) => [
+                  line,
+                  <br key={i} />
+                ])}
               </p>
             </address>
           </section>

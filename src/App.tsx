@@ -4,17 +4,15 @@ import Lenis from "lenis";
 import "./styles/global.css";
 import { initLegacyScript } from "./utils/legacyScript";
 
-import Loader from "./components/Loader";
 import Cursor from "./components/Cursor";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Collections from "./sections/Collections";
 import Flavours from "./sections/Flavours";
 import Values from "./sections/Values";
-// import Story from "./sections/Story";
-// import Reviews from "./sections/Reviews";
-// import Instagram from "./sections/Instagram";
 import Footer from "./components/Footer";
+import FlavoursPage from "./pages/FlavoursPage";
+import AboutPage from "./pages/AboutPage";
 
 function Home() {
   return (
@@ -23,9 +21,6 @@ function Home() {
       <Collections />
       <Flavours />
       <Values />
-      {/* <Story /> */}
-      {/* <Reviews /> */}
-      {/* <Instagram /> */}
     </main>
   );
 }
@@ -50,6 +45,7 @@ function App() {
     requestAnimationFrame(raf);
 
     const cleanupLegacy = initLegacyScript();
+    document.body.classList.remove("is-loading");
 
     return () => {
       lenis.destroy();
@@ -60,10 +56,11 @@ function App() {
   return (
     <BrowserRouter>
       <Cursor />
-      <Loader />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/flavours" element={<FlavoursPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

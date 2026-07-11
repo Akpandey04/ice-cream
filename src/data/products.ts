@@ -1,5 +1,9 @@
+import mangoBloomImg from "../assets/images/mango bloom.png";
+import peanutButterHoneyImg from "../assets/images/peanut butter honey.png";
+import coffeeWalnutImg from "../assets/images/coffee walnut.png";
+
 export const products = [
-  { id: 1, type: "Signature Pint", name: "Berry Velvet", description: "Strawberry compote, Madagascar vanilla, and soft cream.", image: "assets/images/hero-product.png", variant: "berry", wide: false },
-  { id: 2, type: "Chef Favourite", name: "Midnight Cocoa", description: "Dark chocolate ribbon, roasted cacao nibs, and velvet ganache.", image: "assets/images/hero-product.png", variant: "cocoa", wide: true },
-  { id: 3, type: "Seasonal Drop", name: "Golden Mango", description: "Alphonso mango, cream, and a bright citrus finish.", image: "assets/images/hero-product.png", variant: "mango", wide: false }
+  { id: 1, type: "Signature Pint", name: "Mango Bloom", description: "Fresh tropical mango blended into sweet creamy perfection.", image: mangoBloomImg, variant: "mango", wide: false },
+  { id: 2, type: "Chef Favourite", name: "Peanut Butter Honey", description: "Roasted peanut butter swirled with organic honey.", image: peanutButterHoneyImg, variant: "cocoa", wide: true },
+  { id: 3, type: "Seasonal Drop", name: "Coffee Walnut", description: "Rich espresso infused with crunchy toasted walnuts.", image: coffeeWalnutImg, variant: "berry", wide: false }
 ];
