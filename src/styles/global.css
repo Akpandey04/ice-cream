@@ -2013,11 +2013,11 @@ main,
 @media (max-width: 1024px) {
   /* Mobile/Tablet Hero Overrides (Applies to <= 1024px) */
   .hero.section-panel {
-    padding-top: 5rem !important;
+    padding-top: 8rem !important;
     padding-bottom: 3rem !important;
   }
   .hero-bg-gradient {
-    background: linear-gradient(to bottom, #F595B0 0%, #FA82A0 30%, #FC6F95 50%, #FC557B 100%) !important;
+    background: linear-gradient(to bottom, #F595B0 0%, #FA82A0 30%, #FC557B 60%, #c83461 100%) !important;
   }
   .hero-grid {
     display: flex !important;
@@ -2051,7 +2051,7 @@ main,
   .hero-media-right {
     order: 3 !important; /* Image between text and buttons */
     min-height: auto !important;
-    margin: 0 !important;
+    margin: 1.5rem 0 0 !important; /* Moved slightly downward */
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
