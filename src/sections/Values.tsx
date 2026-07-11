@@ -3,12 +3,12 @@ import { values } from "../data/values";
 
 export default function Values() {
   const trackRef = useRef<HTMLDivElement>(null);
-  const requestRef = useRef<number>();
+  const requestRef = useRef<number | null>(null);
   const currentX = useRef(0);
   const isDragging = useRef(false);
   const startX = useRef(0);
   const lastX = useRef(0);
-  const resumeTimeoutRef = useRef<NodeJS.Timeout>();
+  const resumeTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
     const checkMobile = () => window.innerWidth <= 768;
