@@ -2017,7 +2017,7 @@ main,
     padding-bottom: 3rem !important;
   }
   .hero-bg-gradient {
-    background: linear-gradient(to bottom, #F595B0 0%, #FA82A0 30%, #FC557B 60%, #c83461 100%) !important;
+    background: linear-gradient(to bottom, #F595B0 0%, #FA82A0 25%, #FC6F95 40%, #FC557B 55%, #FC557B 85%, #FC6F95 100%) !important;
   }
   .hero-grid {
     display: flex !important;
