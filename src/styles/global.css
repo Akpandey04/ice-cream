@@ -2371,7 +2371,7 @@ main,
   background: 
     radial-gradient(circle at 10% 10%, rgba(255,255,255,0.4) 0%, transparent 20%),
     radial-gradient(circle at 90% 90%, rgba(255,255,255,0.3) 0%, transparent 20%),
-    #fdf5f7;
+    #ffeaf0;
   border-radius: 32px;
   box-shadow: 0 30px 60px rgba(44, 18, 14, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.6) inset;
   padding: 2.5rem 3rem;
@@ -2381,12 +2381,22 @@ main,
   animation: modalScaleIn 300ms ease-out forwards;
   max-height: 95vh;
   overflow-y: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: #5d192b transparent;
 }
 
 .order-modal::-webkit-scrollbar {
-  display: none;
+  width: 8px;
+}
+.order-modal::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.order-modal::-webkit-scrollbar-thumb {
+  background-color: #5d192b;
+  border-radius: 10px;
+  border: 2px solid #ffeaf0;
 }
 
 .order-modal::before {
@@ -2500,7 +2510,7 @@ main,
 }
 
 .om-gallery {
-  width: 75%;
+  width: 85%;
   margin: 0 auto 2rem;
   border-radius: 16px;
   filter: drop-shadow(0 15px 30px rgba(209, 91, 124, 0.15));
@@ -2704,6 +2714,11 @@ main,
     width: 95%;
     padding: 2rem 1.5rem;
     border-radius: 28px;
+    scrollbar-width: none;
+  }
+  
+  .order-modal::-webkit-scrollbar {
+    display: none;
   }
   
   .order-modal::before {
