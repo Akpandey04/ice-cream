@@ -2200,7 +2200,7 @@ main,
 }
 @media (max-width: 1024px) {
   .hero-bg-gradient {
-    background: linear-gradient(150deg, #F595B0 0%, #FA82A0 12%, #FC6F95 24%, #FC557B 40%, #FC557B 75%, #FC6F95 90%, #FC6F95 100%) !important;
+    background: linear-gradient(150deg, #FADDE6 0%, #F6A8BC 14%, #FA82A0 26%, #FC6F95 38%, #FC557B 50%, #FC557B 75%, #FC6F95 90%, #FC6F95 100%) !important;
   }
 }
 
