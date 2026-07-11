@@ -25,7 +25,10 @@ export default function FlavoursPage() {
         <div className="flavours-page-grid">
           {flavours.map((f, i) => (
             <article key={i} className="product-card flavour-page-card reveal">
-              <a href="#newsletter" className="card-click-area" aria-label={`Order ${f.name}`}></a>
+              <a href="#" className="card-click-area" aria-label={`Order ${f.name}`} onClick={(e) => {
+                e.preventDefault();
+                window.dispatchEvent(new Event('openOrderModal'));
+              }}></a>
               <div 
                 className="product-card__art"
                 style={{ background: `linear-gradient(135deg, ${f.theme[0]} 0%, ${f.theme[1]} 100%)` }}
@@ -50,7 +53,10 @@ export default function FlavoursPage() {
           <p style={{ margin: "1.5rem auto 2.5rem", maxWidth: "600px", fontSize: "1.15rem", lineHeight: 1.6, color: "var(--muted)" }}>
             From tropical fruits to rich chocolates and handcrafted specials, every flavour is made to create a memorable dessert experience.
           </p>
-          <a className="button button--primary magnetic" href="#newsletter" style={{ alignSelf: "center", marginTop: "1rem" }}>Order Now</a>
+          <a href="#" className="button button--primary magnetic" style={{ alignSelf: "center", marginTop: "1rem" }} onClick={(e) => {
+            e.preventDefault();
+            window.dispatchEvent(new Event('openOrderModal'));
+          }}>Order Now</a>
         </div>
       </section>
     </main>

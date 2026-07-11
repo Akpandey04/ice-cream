@@ -51,7 +51,10 @@ export default function Navbar() {
         <a href="/flavours" className={location.pathname === "/flavours" ? "active" : ""}>Flavours</a>
       </nav>
 
-      <a className="nav-cta magnetic" href="#newsletter">Order Now</a>
+      <a href="#" className="nav-cta magnetic" onClick={(e) => {
+        e.preventDefault();
+        window.dispatchEvent(new Event('openOrderModal'));
+      }}>Order Now</a>
 
       <AnimatePresence>
         {isOpen && (
@@ -90,7 +93,11 @@ export default function Navbar() {
                 <a href="/" className={location.pathname === "/" ? "active" : ""} onClick={closeMenu}>Home</a>
                 <a href="/about" className={location.pathname === "/about" ? "active" : ""} onClick={closeMenu}>About Us</a>
                 <a href="/flavours" className={location.pathname === "/flavours" ? "active" : ""} onClick={closeMenu}>Flavours</a>
-                <a href="#newsletter" onClick={closeMenu}>Order Now</a>
+                <a href="#" onClick={(e) => {
+                  e.preventDefault();
+                  window.dispatchEvent(new Event('openOrderModal'));
+                  closeMenu();
+                }}>Order Now</a>
               </nav>
             </motion.div>
           </>

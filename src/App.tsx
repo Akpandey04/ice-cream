@@ -25,6 +25,8 @@ function Home() {
   );
 }
 
+import OrderModal from "./components/OrderModal";
+
 function App() {
   useEffect(() => {
     const lenis = new Lenis({
@@ -63,6 +65,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
       </Routes>
       <Footer />
+      <OrderModal />
     </BrowserRouter>
   );
 }
