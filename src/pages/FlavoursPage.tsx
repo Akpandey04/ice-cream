@@ -39,7 +39,7 @@ export default function FlavoursPage() {
                 <span>{f.tag}</span>
                 <h3>{f.name}</h3>
                 <p>{f.description}</p>
-                <div className="product-card__button">Order Now</div>
+              <div className="product-card__button" onClick={() => window.dispatchEvent(new Event('openOrderModal'))} style={{cursor: 'pointer'}}>Order Now</div>
               </div>
             </article>
           ))}
