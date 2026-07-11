@@ -2203,3 +2203,36 @@ main,
     background: linear-gradient(150deg, #F595B0 0%, #FA82A0 12%, #FC6F95 24%, #FC557B 40%, #FC557B 75%, #FC6F95 90%, #FC6F95 100%) !important;
   }
 }
+
+/* --- Desktop rules for Carousel --- */
+.value-card.mobile-duplicate {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Mobile Why Choose Us Carousel */
+  .value-carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    /* Subtle fade on left and right edges */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  }
+  .values.section-panel .value-grid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 1.2rem !important;
+    /* allow vertical scroll but handle horizontal drag via JS */
+    touch-action: pan-y !important;
+    padding: 1rem 0 !important; /* give space for shadows during transform */
+    width: max-content; /* Ensure the flex container expands to fit all children */
+  }
+  .values.section-panel .value-card {
+    flex: 0 0 78% !important;
+    min-width: 280px !important;
+    max-width: 340px !important;
+  }
+  .value-card.mobile-duplicate {
+    display: block !important;
+  }
+}
