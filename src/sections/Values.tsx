@@ -16,8 +16,8 @@ export default function Values() {
 
     const animate = () => {
       if (!isDragging.current && trackRef.current) {
-        // Very slow movement: ~20-30px per sec => ~0.4px per frame (60fps)
-        currentX.current -= 0.4;
+        // Increased movement speed: ~0.9px per frame
+        currentX.current -= 0.9;
         
         const totalScrollWidth = trackRef.current.scrollWidth;
         const singleSetWidth = totalScrollWidth / 3; // 3 identical sets
