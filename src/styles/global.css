@@ -2031,7 +2031,7 @@ main,
   .hero__eyebrow {
     order: 0 !important;
     text-align: center !important;
-    margin: 1.5rem auto 0.2rem !important; /* Added 1.5rem top margin to push text down */
+    margin: 0 auto 0.2rem !important;
   }
   .hero h1 { 
     order: 1 !important;
