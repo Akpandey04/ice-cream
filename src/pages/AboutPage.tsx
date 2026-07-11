@@ -106,11 +106,11 @@ export default function AboutPage() {
       {/* Section 5 — Call to Action */}
       <section className="section-panel flavours-cta-section reveal">
         <div className="section-heading" style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", margin: "0 auto" }}>
-          <h2 style={{ maxWidth: "22ch", margin: "0 auto" }}>Ready to Discover Your Favourite Scoop?</h2>
-          <p className="hero__text" style={{ margin: "1.5rem auto 2.5rem", maxWidth: "600px" }}>
+          <h2 style={{ maxWidth: "22ch", margin: "0 auto", color: "var(--ink)" }}>Ready to Discover Your Favourite Scoop?</h2>
+          <p style={{ margin: "1.5rem auto 2.5rem", maxWidth: "600px", fontSize: "1.15rem", lineHeight: 1.6, color: "var(--muted)" }}>
             Explore our handcrafted collection and experience flavours made with passion, premium ingredients, and unforgettable taste.
           </p>
-          <a className="button button--primary magnetic" href="/flavours" style={{ alignSelf: "center" }}>Explore Flavours</a>
+          <a className="button button--primary magnetic" href="/flavours" style={{ alignSelf: "center", marginTop: "1rem" }}>Explore Flavours</a>
         </div>
       </section>
     </main>
