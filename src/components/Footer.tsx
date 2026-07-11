@@ -84,7 +84,7 @@ export default function Footer() {
           </form>
         </section> */}
 
-        <div className="footer-bottom" style={{ marginTop: '3rem' }}>
+        <div className="footer-bottom" style={{ marginTop: '4.5rem' }}>
           <p>&copy; 2026 Your Brand. All Rights Reserved.</p>
           <nav className="policy-links" aria-label="Legal links">
             {footer.legal.map((link, i) => (
