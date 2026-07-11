@@ -13,10 +13,17 @@ export default function Navbar() {
     };
     window.addEventListener("keydown", handleEsc);
 
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
     return () => {
       window.removeEventListener("keydown", handleEsc);
+      document.body.style.overflow = "";
     };
-  }, []);
+  }, [isOpen]);
 
   const closeMenu = () => setIsOpen(false);
 
