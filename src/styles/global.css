@@ -2128,3 +2128,73 @@ main,
     width: 100% !important;
   }
 }
+@media (max-width: 768px) {
+  /* Mobile Signature Flavours Overrides */
+  .flavour-chapter { 
+    display: flex !important; 
+    flex-direction: column !important; 
+    align-items: center !important;
+    min-height: auto !important; 
+    padding: 3rem 0 !important; 
+    text-align: center !important; 
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important; 
+    gap: 0.8rem !important; 
+  }
+  .flavour-mobile-heading { 
+    text-align: center !important; 
+    margin: 0 auto 3rem !important; 
+    color: #fff !important; 
+    font-size: 1.45rem !important; 
+    font-weight: 900 !important; 
+    letter-spacing: 2px !important; 
+    text-transform: uppercase !important; 
+    display: flex !important; 
+    flex-direction: column !important; 
+    align-items: center !important; 
+    gap: 0.8rem !important;
+  }
+  .flavour-chapter span { 
+    margin: 0 !important; 
+    font-size: 1rem !important; 
+    color: rgba(255, 255, 255, 0.7) !important; 
+    font-weight: 700 !important; 
+  }
+  .flavour-chapter h3 { 
+    display: block !important; 
+    font-size: 2.8rem !important; 
+    margin: 0 !important; 
+    color: var(--white) !important; 
+    font-family: Georgia, "Times New Roman", serif !important; 
+  }
+  .premium-desc-main { 
+    display: block !important; 
+    margin: 0.5rem auto 1.5rem !important; 
+    max-width: 95% !important; 
+    font-size: 1.1rem !important; 
+    line-height: 1.6 !important; 
+    color: rgba(255, 255, 255, 0.85) !important; 
+  }
+  .mobile-flavour-image { 
+    position: relative !important; 
+    width: 100% !important; 
+    display: flex !important; 
+    justify-content: center !important; 
+  }
+  .flavour-scroll { 
+    gap: 0 !important; 
+    padding: 0 0 3rem !important; 
+  }
+  .mobile-flavour-pack { 
+    display: flex !important; 
+    position: relative !important; 
+    top: auto !important; 
+    left: auto !important; 
+    transform: none !important; 
+    opacity: 1 !important; 
+    visibility: visible !important; 
+    width: 100% !important; 
+    max-width: 22rem !important; 
+    margin: 0 auto !important; 
+    aspect-ratio: 1 / 1 !important; 
+  }
+}

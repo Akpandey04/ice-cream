@@ -67,7 +67,10 @@ export default function Flavours() {
         </div>
       </div>
       <div className="flavour-scroll">
-        <p className="eyebrow mobile-only flavour-mobile-title">Signature Flavours</p>
+        <div className="mobile-only flavour-mobile-heading">
+          SIGNATURE FLAVOURS
+          <hr className="premium-divider-tiny" />
+        </div>
         {homeFlavours.map((f, i) => (
           <article 
             key={i} 
@@ -75,18 +78,21 @@ export default function Flavours() {
             data-flavour={f.id} 
             data-index={i}
             ref={el => { chapterRefs.current[i] = el; }}
+            style={{
+              '--flavour-one': f.theme?.[0],
+              '--flavour-two': f.theme?.[1],
+              '--flavour-three': f.theme?.[2],
+            } as React.CSSProperties}
           >
-            <h2 className="mobile-only premium-right-title">{f.stageHeading}</h2>
-            <div className="mobile-only mobile-flavour-image">
-              <img src={f.image} alt={f.name} className="square-flavour-image" />
-            </div>
-            
             <span className="premium-flavour-number">{f.number}</span>
             <h3 className="premium-right-title">{f.name}</h3>
-            <hr className="premium-divider-small" />
             <p className="premium-desc-main">{f.description}</p>
             
-            <p className="mobile-only flavour-desc-stage">{f.stageText}</p>
+            <div className="mobile-only mobile-flavour-image">
+              <div className="flavour-pack mobile-flavour-pack">
+                <img src={f.image} alt={f.name} className="square-flavour-image" />
+              </div>
+            </div>
           </article>
         ))}
       </div>
