@@ -1543,7 +1543,7 @@ main,
   justify-content: space-between;
   gap: 1rem;
   padding-top: 0.4rem;
-  border-top: 1px solid rgba(255, 241, 217, 0.14);
+  /* border-top: 1px solid rgba(255, 241, 217, 0.14); */
 }
 
 .footer-bottom p {
