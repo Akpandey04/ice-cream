@@ -2058,7 +2058,7 @@ main,
     padding: 0 !important;
   }
   .hero-cup-wrapper {
-    transform: scale(1.7) translateY(2.5rem) !important; /* Increase image size more and shift downwards */
+    transform: scale(1.7) translateY(1rem) !important; /* Increase image size more and shift upwards slightly */
     transform-origin: center !important;
     margin: 0 auto !important;
   }
