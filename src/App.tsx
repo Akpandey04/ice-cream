@@ -46,10 +46,17 @@ function App() {
     }
     requestAnimationFrame(raf);
 
+    const handleLenisStop = () => lenis.stop();
+    const handleLenisStart = () => lenis.start();
+    window.addEventListener("lenisStop", handleLenisStop);
+    window.addEventListener("lenisStart", handleLenisStart);
+
     const cleanupLegacy = initLegacyScript();
     document.body.classList.remove("is-loading");
 
     return () => {
+      window.removeEventListener("lenisStop", handleLenisStop);
+      window.removeEventListener("lenisStart", handleLenisStart);
       lenis.destroy();
       if (cleanupLegacy) cleanupLegacy();
     };

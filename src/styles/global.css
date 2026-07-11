@@ -2446,7 +2446,7 @@ main,
 }
 
 .om-logo {
-  width: 54px;
+  width: 64px;
   height: auto;
 }
 
@@ -2540,12 +2540,12 @@ main,
 
 /* CTAs */
 .om-actions {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
   width: 100%;
-  max-width: 500px;
-  margin: 0 auto 3rem;
+  max-width: 100%;
+  margin: 0 auto 2rem;
 }
 
 .om-btn {
@@ -2641,7 +2641,7 @@ main,
   background-color: rgba(255, 248, 249, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 20px;
-  padding: 1.5rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2654,13 +2654,17 @@ main,
 }
 
 .om-icard-icon {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+}
+.om-icard-icon svg {
+  width: 16px;
+  height: 16px;
 }
 
 .wa-card-icon {
@@ -2674,17 +2678,17 @@ main,
 }
 
 .om-icard-content h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--ink);
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.4rem;
   font-weight: 700;
 }
 
 .om-icard-content p {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: var(--muted);
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 /* Animations */
@@ -2763,6 +2767,7 @@ main,
   }
 
   .om-actions {
+    grid-template-columns: 1fr;
     max-width: 100%;
     margin-bottom: 2rem;
   }

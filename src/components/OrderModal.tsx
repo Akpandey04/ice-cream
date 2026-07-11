@@ -30,6 +30,7 @@ export default function OrderModal() {
 
   useEffect(() => {
     if (isOpen && !isClosing) {
+      window.dispatchEvent(new Event("lenisStop"));
       const originalStyle = window.getComputedStyle(document.body).overflow;  
       document.body.style.overflow = "hidden";
       
@@ -41,6 +42,7 @@ export default function OrderModal() {
       document.addEventListener("keydown", handleKeyDown);
       
       return () => {
+        window.dispatchEvent(new Event("lenisStart"));
         document.body.style.overflow = originalStyle;
         document.removeEventListener("keydown", handleKeyDown);
       };
@@ -68,6 +70,7 @@ export default function OrderModal() {
         role="dialog"
         aria-modal="true"
         aria-labelledby="order-modal-title"
+        data-lenis-prevent="true"
       >
         {/* Header - Logo + Close Button */}
         <div className="om-top-bar">
