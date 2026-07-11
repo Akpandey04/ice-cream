@@ -2002,9 +2002,6 @@ main,
     text-align: center;
     gap: 2rem;
   }
-  .about-hero-image {
-    order: -1;
-  }
 }
 
 #root { display: contents; }
