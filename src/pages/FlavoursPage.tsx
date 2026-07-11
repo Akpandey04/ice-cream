@@ -46,11 +46,11 @@ export default function FlavoursPage() {
       {/* CTA Section */}
       <section className="section-panel flavours-cta-section reveal" style={{ display: "flex", justifyContent: "center", width: "100%" }}>
         <div className="section-heading" style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", margin: "0 auto" }}>
-          <h2 style={{ maxWidth: "18ch", margin: "0 auto" }}>Discover Your Next Favourite Scoop</h2>
-          <p className="hero__text" style={{ margin: "1.5rem auto 2.5rem", maxWidth: "600px" }}>
+          <h2 style={{ maxWidth: "18ch", margin: "0 auto", color: "var(--ink)" }}>Discover Your Next Favourite Scoop</h2>
+          <p style={{ margin: "1.5rem auto 2.5rem", maxWidth: "600px", fontSize: "1.15rem", lineHeight: 1.6, color: "var(--muted)" }}>
             From tropical fruits to rich chocolates and handcrafted specials, every flavour is made to create a memorable dessert experience.
           </p>
-          <a className="button button--primary magnetic" href="#newsletter" style={{ alignSelf: "center" }}>Order Now</a>
+          <a className="button button--primary magnetic" href="#newsletter" style={{ alignSelf: "center", marginTop: "1rem" }}>Order Now</a>
         </div>
       </section>
     </main>
