@@ -352,7 +352,12 @@ main,
 .section-panel {
   position: relative;
   overflow: clip;
-  padding: 7rem clamp(1.1rem, 5vw, 5rem);
+  padding: 5rem clamp(1.1rem, 5vw, 5rem);
+}
+
+.about-page-main .section-panel {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .hero {
@@ -1769,7 +1774,8 @@ main,
   .brand { font-size: 1.1rem; }
   .nav-links { display: none; }
   .nav-cta { min-height: 2.7rem; padding: 0 1.2rem; }
-  .section-panel { padding: 6rem 1.5rem; }
+  .section-panel { padding: 4rem 1.5rem; }
+  .about-page-main .section-panel { padding-top: 2.5rem; padding-bottom: 2.5rem; }
   
   /* Hero Mobile Refinements */
   .hero-grid {
