@@ -7,5 +7,5 @@ export const footer = {
   ],
   contact: { email: "scoopybloom@gmail.com", phone: "+91 7053376016", address: ["IP Extension, Patpadganj,", "Delhi - 110092,", "India"] },
   socialText: "Stay connected with us for exciting launches, new flavours, behind-the-scenes moments, and exclusive offers.",
-  legal: []
+  legal: [] as { label: string; href: string }[]
 };
