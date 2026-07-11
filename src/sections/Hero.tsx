@@ -1,6 +1,6 @@
 import { heroData } from "../data/hero";
 import heroImage from "../assets/images/hero2.png";
-import heroImageMobile from "../assets/images/hero3.png";
+import heroImageMobile from "../assets/images/hero3.jpeg";
 
 export default function Hero() {
   return (
