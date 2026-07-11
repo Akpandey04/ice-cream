@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import heroImage from "../assets/images/Rose Litchi Ice cream.png";
 import storyImage from "../assets/images/mango bloom.png";
 import promiseImage from "../assets/images/pistachio kunafa dream cup.png";
-import { values } from "../data/values";
 
 export default function AboutPage() {
   useEffect(() => {
@@ -95,21 +94,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Section 4 — Our Values */}
-      <section className="values section-panel" id="values">
-        <div className="section-heading reveal" style={{ textAlign: "center", marginBottom: "4rem" }}>
-          <h2>Our Values</h2>
-        </div>
-        <div className="value-grid">
-          {values.map(v => (
-            <article key={v.id} className="value-card reveal">
-              <span className="value-icon">{v.icon}</span>
-              <h3>{v.title}</h3>
-              <p>{v.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
 
       {/* Section 6 — Brand Journey */}
       <section className="section-panel reveal about-journey">
