@@ -360,7 +360,7 @@ main,
   padding-bottom: 3.5rem;
 }
 .about-page-main > .section-panel:first-child {
-  padding-top: 8.5rem !important; /* To clear the fixed navbar */
+  padding-top: 11.5rem !important; /* To clear the fixed navbar */
 }
 
 .hero {
@@ -1779,6 +1779,7 @@ main,
   .nav-cta { min-height: 2.7rem; padding: 0 1.2rem; }
   .section-panel { padding: 4rem 1.5rem; }
   .about-page-main .section-panel { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .about-page-main > .section-panel:first-child { padding-top: 8.5rem !important; }
   
   /* Hero Mobile Refinements */
   .hero-grid {
@@ -2005,7 +2006,7 @@ main,
     text-align: center;
     gap: 2rem;
   }
-  .about-split-image {
+  .about-split-image, .about-hero-image {
     order: 2 !important; /* Ensure image always comes after text */
   }
   .about-split-content, .about-hero-content {
