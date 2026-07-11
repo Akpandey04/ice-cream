@@ -1,5 +1,6 @@
 import { heroData } from "../data/hero";
 import heroImage from "../assets/images/hero2.png";
+import heroImageMobile from "../assets/images/hero3.png";
 
 export default function Hero() {
   return (
@@ -51,7 +52,10 @@ export default function Hero() {
           <div className="hero-glow"></div>
           
           <div className="hero-cup-wrapper">
-            <img src={heroImage} alt="ScoopyBloom Hero Cup" className="hero-cup" />
+            <picture>
+              <source media="(max-width: 1024px)" srcSet={heroImageMobile} />
+              <img src={heroImage} alt="ScoopyBloom Hero Cup" className="hero-cup" />
+            </picture>
             <div className="hero-shadow"></div>
           </div>
         </div>
