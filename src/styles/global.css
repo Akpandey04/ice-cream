@@ -2058,7 +2058,7 @@ main,
     padding: 0 !important;
   }
   .hero-cup-wrapper {
-    transform: scale(1.7) translateY(1rem) !important; /* Increase image size more and shift upwards slightly */
+    transform: scale(1.85) translateY(2rem) !important; /* Increase image size more and shift downwards */
     transform-origin: center !important;
     margin: 0 auto !important;
   }
@@ -2072,7 +2072,7 @@ main,
     gap: 0.8rem !important; 
     align-items: center !important; 
     justify-content: center !important;
-    margin: 7rem auto 1.5rem !important; /* Shifted further downwards to clear larger image */
+    margin: 8.5rem auto 1.5rem !important; /* Shifted further downwards to clear larger image */
     padding: 0 !important; 
     width: 100% !important;
     max-width: 450px !important;
