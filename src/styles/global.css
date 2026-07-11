@@ -1322,7 +1322,7 @@ main,
   gap: clamp(1rem, 3vw, 2rem);
   align-items: start;
   padding-bottom: 0.4rem;
-  border-bottom: 1px solid rgba(255, 241, 217, 0.18);
+  /* border-bottom: 1px solid rgba(255, 241, 217, 0.18); */
 }
 
 .footer-brand-column p,
@@ -1542,7 +1542,7 @@ main,
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding-top: 1.5rem;
+  padding-top: 0.8rem;
   border-top: 1px solid rgba(255, 241, 217, 0.14);
 }
 
