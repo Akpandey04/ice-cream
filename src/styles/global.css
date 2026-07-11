@@ -2104,6 +2104,9 @@ main,
     padding: 0 !important; 
     width: 100% !important;
     max-width: 450px !important;
+    position: relative !important;
+    z-index: 20 !important;
+    pointer-events: auto !important;
   }
   .hero__actions .button {
     flex: 1 !important;
