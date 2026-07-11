@@ -60,7 +60,7 @@ export default function Footer() {
           </section>
         </div>
 
-        <section className="footer-newsletter" aria-label="Newsletter subscription">
+        {/* <section className="footer-newsletter" aria-label="Newsletter subscription">
           <div>
             <h2>Join Our Sweet Community</h2>
             <p>
@@ -82,9 +82,9 @@ export default function Footer() {
             </div>
             <p className="form-message" id="formMessage" role="status"></p>
           </form>
-        </section>
+        </section> */}
 
-        <div className="footer-bottom">
+        <div className="footer-bottom" style={{ marginTop: '3rem' }}>
           <p>&copy; 2026 Your Brand. All Rights Reserved.</p>
           <nav className="policy-links" aria-label="Legal links">
             {footer.legal.map((link, i) => (
