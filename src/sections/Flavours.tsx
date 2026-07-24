@@ -74,7 +74,7 @@ export default function Flavours() {
         {homeFlavours.map((f, i) => (
           <article 
             key={i} 
-            className={`flavour-chapter ${i === activeIndex ? 'is-active' : ''}`}
+            className="flavour-chapter" 
             data-flavour={f.id} 
             data-index={i}
             ref={el => { chapterRefs.current[i] = el; }}
