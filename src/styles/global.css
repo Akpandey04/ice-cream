@@ -532,8 +532,8 @@ main,
 /* Media Cup elements */
 .hero-cup-wrapper {
   position: relative;
-  width: 75%;
-  max-width: 520px;
+  width: 95%;
+  max-width: 680px;
   display: flex;
   justify-content: center;
   align-items: center;
