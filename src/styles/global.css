@@ -538,7 +538,7 @@ main,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transform: translate(2rem, -4rem);
+  transform: translate(2rem, -8rem);
 }
 
 .hero-cup {
