@@ -533,12 +533,12 @@ main,
 .hero-cup-wrapper {
   position: relative;
   width: 95%;
-  max-width: 780px;
+  max-width: 720px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transform: translate(-1.5rem, 0rem);
+  transform: translate(2rem, 0rem);
 }
 
 .hero-cup {
