@@ -34,7 +34,7 @@ export default function Hero() {
               <source media="(max-width: 1024px)" srcSet={heroImageMobile} />
               <img src={heroImage} alt="ScoopyBloom Hero Cup" className="hero-cup" />
             </picture>
-            <div className="hero-shadow"></div>
+            {/* <div className="hero-shadow"></div> */ }
           </div>
         </div>
       </div>
