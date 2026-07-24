@@ -2036,7 +2036,7 @@ main,
   /* Mobile/Tablet Hero Overrides (Applies to <= 1024px) */
   .hero.section-panel {
     padding-top: 8rem !important;
-    padding-bottom: 3rem !important;
+    padding-bottom: 1rem !important;
   }
   .hero-bg-gradient {
     background: linear-gradient(to bottom, #F595B0 0%, #FA82A0 18%, #FC6F95 26%, #FC557B 31%, #FC557B 72%, #FC6F95 85%, #FC6F95 100%) !important;
