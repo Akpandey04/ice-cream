@@ -532,13 +532,13 @@ main,
 /* Media Cup elements */
 .hero-cup-wrapper {
   position: relative;
-  width: 90%;
-  max-width: 720px;
+  width: 95%;
+  max-width: 780px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transform: translate(4rem, -1.5rem);
+  transform: translate(1rem, -1.5rem);
 }
 
 .hero-cup {
