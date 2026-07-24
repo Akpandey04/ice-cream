@@ -2211,6 +2211,20 @@ main,
     display: flex !important; 
     justify-content: center !important; 
   }
+  .flavour-chapter:nth-child(odd) .mobile-flavour-image .square-flavour-image {
+    transform: translateX(-3rem) !important;
+    opacity: 0.3 !important;
+    transition: transform 900ms cubic-bezier(0.1, 0.8, 0.2, 1), opacity 700ms ease !important;
+  }
+  .flavour-chapter:nth-child(even) .mobile-flavour-image .square-flavour-image {
+    transform: translateX(3rem) !important;
+    opacity: 0.3 !important;
+    transition: transform 900ms cubic-bezier(0.1, 0.8, 0.2, 1), opacity 700ms ease !important;
+  }
+  .flavour-chapter.is-active .mobile-flavour-image .square-flavour-image {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
 
   .flavour-scroll { 
     gap: 0 !important; 
