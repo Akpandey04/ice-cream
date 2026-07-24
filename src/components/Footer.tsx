@@ -85,7 +85,7 @@ export default function Footer() {
         </section> */}
 
         <div className="footer-bottom" style={{ marginTop: '4.5rem' }}>
-          <p>&copy; 2026 Your Brand. All Rights Reserved.</p>
+          <p>&copy; 2026 ScoopyBloom. All Rights Reserved.</p>
           <nav className="policy-links" aria-label="Legal links">
             {footer.legal.map((link, i) => (
               <a key={i} href={link.href}>{link.label}</a>
