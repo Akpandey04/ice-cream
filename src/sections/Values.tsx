@@ -18,13 +18,13 @@ export default function Values({ title = "Premium where it matters, playful wher
       lastTime = time;
 
       if (!isDragging.current && trackRef.current) {
-        // Consistent speed regardless of refresh rate (~60px per second)
-        currentX.current -= dt * 0.06;
+        // Increased speed as requested (~90px per second)
+        currentX.current -= dt * 0.09;
         
-        const firstCard = trackRef.current.children[0] as HTMLElement;
-        const gap = parseFloat(getComputedStyle(trackRef.current).gap) || 0;
-        // getBoundingClientRect for subpixel precision prevents visual jumps
-        const singleSetWidth = (firstCard.getBoundingClientRect().width + gap) * values.length;
+        const card1 = trackRef.current.children[0] as HTMLElement;
+        const card5 = trackRef.current.children[values.length] as HTMLElement;
+        // The most accurate physical distance of one set, avoiding browser-specific gap/flex bugs
+        const singleSetWidth = card5.offsetLeft - card1.offsetLeft;
         
         // Seamless loop reset
         if (currentX.current <= -singleSetWidth) {
@@ -59,9 +59,9 @@ export default function Values({ title = "Premium where it matters, playful wher
     const dx = clientX - startX.current;
     currentX.current = lastX.current + dx;
     
-    const firstCard = trackRef.current.children[0] as HTMLElement;
-    const gap = parseFloat(getComputedStyle(trackRef.current).gap) || 0;
-    const singleSetWidth = (firstCard.getBoundingClientRect().width + gap) * values.length;
+    const card1 = trackRef.current.children[0] as HTMLElement;
+    const card5 = trackRef.current.children[values.length] as HTMLElement;
+    const singleSetWidth = card5.offsetLeft - card1.offsetLeft;
     
     // Loop during manual drag
     if (currentX.current <= -singleSetWidth) {
