@@ -2045,6 +2045,7 @@ main,
   }
   .about-scrollable-grid .value-card {
     min-width: 85vw;
+    flex: 0 0 85vw !important;
     scroll-snap-align: center;
   }
 }

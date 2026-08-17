@@ -58,19 +58,19 @@ export default function AboutPage() {
         </div>
         <div className="value-grid about-scrollable-grid">
           <article className="value-card reveal">
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>No Artificial Colours</h3>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.8rem' }}>No Artificial Colours</h3>
             <p>We keep our ice creams 100% natural, without any artificial dyes.</p>
           </article>
           <article className="value-card reveal">
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>No Preservatives</h3>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.8rem' }}>No Preservatives</h3>
             <p>Enjoy the authentic taste of ice cream, made fresh without chemical preservatives.</p>
           </article>
           <article className="value-card reveal">
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>Wide Sugar-Free Range</h3>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.8rem' }}>Wide Sugar-Free Range</h3>
             <p>Indulge guilt-free with our carefully crafted selection of sugar-free delights.</p>
           </article>
           <article className="value-card reveal">
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>Premium Ingredients</h3>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.8rem' }}>Premium Ingredients</h3>
             <p>Crafted with premium, natural ingredients for an unforgettable experience.</p>
           </article>
         </div>
