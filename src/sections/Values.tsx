@@ -11,9 +11,6 @@ export default function Values({ title = "Premium where it matters, playful wher
   const resumeTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
-    const checkMobile = () => window.innerWidth <= 768;
-    if (!checkMobile()) return;
-
     const animate = () => {
       if (!isDragging.current && trackRef.current) {
         // Increased movement speed: ~0.9px per frame
@@ -43,7 +40,6 @@ export default function Values({ title = "Premium where it matters, playful wher
   }, []);
 
   const handleTouchStart = (clientX: number) => {
-    if (window.innerWidth > 768) return;
     isDragging.current = true;
     startX.current = clientX;
     lastX.current = currentX.current;
@@ -51,7 +47,7 @@ export default function Values({ title = "Premium where it matters, playful wher
   };
 
   const handleTouchMove = (clientX: number) => {
-    if (!isDragging.current || window.innerWidth > 768 || !trackRef.current) return;
+    if (!isDragging.current || !trackRef.current) return;
     const dx = clientX - startX.current;
     currentX.current = lastX.current + dx;
     
@@ -71,7 +67,6 @@ export default function Values({ title = "Premium where it matters, playful wher
   };
 
   const handleTouchEnd = () => {
-    if (window.innerWidth > 768) return;
     if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
     // Auto-resume after 2 seconds
     resumeTimeoutRef.current = setTimeout(() => {
