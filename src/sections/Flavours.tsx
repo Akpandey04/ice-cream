@@ -85,7 +85,24 @@ export default function Flavours() {
             } as React.CSSProperties}
           >
             <span className="premium-flavour-number">{f.number}</span>
-            <h3 className="premium-right-title">{f.name}</h3>
+            <h3 className="premium-right-title">
+              {f.name}
+              {f.tag && (
+                <span style={{
+                  fontSize: '1rem',
+                  padding: '0.2rem 0.6rem',
+                  backgroundColor: 'rgba(255,255,255,0.15)',
+                  borderRadius: '12px',
+                  marginLeft: '0.8rem',
+                  verticalAlign: 'middle',
+                  textTransform: 'uppercase',
+                  letterSpacing: '1px',
+                  fontWeight: 'normal'
+                }}>
+                  {f.tag}
+                </span>
+              )}
+            </h3>
             <p className="premium-desc-main">{f.description}</p>
             
             <div className="mobile-only mobile-flavour-image">
