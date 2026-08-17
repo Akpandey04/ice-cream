@@ -37,12 +37,15 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="about-split-content">
-            <h2 style={{ marginBottom: '2rem', color: 'var(--ink)', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>Our Story</h2>
+            <h2 style={{ marginBottom: '2rem', color: 'var(--ink)', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>Why We Started ScoopyBloom 💚</h2>
             <p style={{ marginBottom: '1.5rem', fontSize: '1.15rem', lineHeight: 1.6, color: 'var(--muted)' }}>
-              Every great flavour begins with a simple idea—to create ice cream that feels special. At ScoopyBloom, every recipe is thoughtfully crafted using premium ingredients, rich flavours, and a passion for quality.
+              We started ScoopyBloom because almost everything we eat today contains artificial colours and unnecessary additives.
             </p>
-            <p style={{ fontSize: '1.15rem', lineHeight: 1.6, color: 'var(--muted)' }}>
-              Whether it's a nostalgic classic or a modern creation, each scoop is designed to bring people together and turn everyday moments into memorable celebrations.
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.15rem', lineHeight: 1.6, color: 'var(--muted)' }}>
+              That's why we believe in keeping our ice creams as natural as possible.
+            </p>
+            <p style={{ fontSize: '1.15rem', lineHeight: 1.6, color: 'var(--ink)', fontWeight: 600, fontStyle: 'italic' }}>
+              Pure ingredients. Honest flavours. Just the way ice cream should be. 🌸
             </p>
           </div>
         </div>
@@ -55,24 +58,24 @@ export default function AboutPage() {
         </div>
         <div className="value-grid">
           <article className="value-card reveal">
+            <span className="value-icon">🌿</span>
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>No Artificial Colours</h3>
+            <p>We keep our ice creams 100% natural, without any artificial dyes.</p>
+          </article>
+          <article className="value-card reveal">
+            <span className="value-icon">❄️</span>
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>No Preservatives</h3>
+            <p>Enjoy the authentic taste of ice cream, made fresh without chemical preservatives.</p>
+          </article>
+          <article className="value-card reveal">
+            <span className="value-icon">🍨</span>
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>Wide Sugar-Free Range</h3>
+            <p>Indulge guilt-free with our carefully crafted selection of sugar-free delights.</p>
+          </article>
+          <article className="value-card reveal">
             <span className="value-icon">✨</span>
             <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>Premium Ingredients</h3>
-            <p>We use carefully selected ingredients to deliver authentic taste in every scoop.</p>
-          </article>
-          <article className="value-card reveal">
-            <span className="value-icon">🍦</span>
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>Handcrafted Recipes</h3>
-            <p>Each flavour is thoughtfully developed for a rich and memorable experience.</p>
-          </article>
-          <article className="value-card reveal">
-            <span className="value-icon">🍃</span>
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>Freshly Prepared</h3>
-            <p>Quality and freshness remain at the heart of everything we create.</p>
-          </article>
-          <article className="value-card reveal">
-            <span className="value-icon">❤️</span>
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>Made with Love</h3>
-            <p>Every product reflects our passion for creating desserts that make people smile.</p>
+            <p>Crafted with premium, natural ingredients for an unforgettable experience.</p>
           </article>
         </div>
       </section>
@@ -95,13 +98,7 @@ export default function AboutPage() {
       </section>
 
 
-      {/* Section 6 — Brand Journey */}
-      <section className="section-panel reveal about-journey">
-        <h2>Our Journey</h2>
-        <p style={{ fontSize: '1.25rem', lineHeight: 1.6, color: 'var(--muted)', marginTop: '1.5rem' }}>
-          From carefully selecting premium ingredients to crafting unforgettable flavours, ScoopyBloom continues to grow with one mission—to create joyful moments through every scoop we serve.
-        </p>
-      </section>
+
 
       {/* Section 5 — Call to Action */}
       <section className="section-panel flavours-cta-section reveal">
