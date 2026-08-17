@@ -37,7 +37,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="about-split-content">
-            <h2 style={{ marginBottom: '2rem', color: 'var(--ink)', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>Why We Started ScoopyBloom 💚</h2>
+            <h2 style={{ marginBottom: '2rem', color: 'var(--ink)', fontSize: 'clamp(2rem, 4vw, 3rem)' }}>Why We Started ScoopyBloom</h2>
             <p style={{ marginBottom: '1.5rem', fontSize: '1.15rem', lineHeight: 1.6, color: 'var(--muted)' }}>
               We started ScoopyBloom because almost everything we eat today contains artificial colours and unnecessary additives.
             </p>
@@ -56,24 +56,20 @@ export default function AboutPage() {
         <div className="section-heading" style={{ textAlign: "center", marginBottom: "4rem" }}>
           <h2>Why Choose ScoopyBloom?</h2>
         </div>
-        <div className="value-grid">
+        <div className="value-grid about-scrollable-grid">
           <article className="value-card reveal">
-            <span className="value-icon">🌿</span>
             <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>No Artificial Colours</h3>
             <p>We keep our ice creams 100% natural, without any artificial dyes.</p>
           </article>
           <article className="value-card reveal">
-            <span className="value-icon">❄️</span>
             <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>No Preservatives</h3>
             <p>Enjoy the authentic taste of ice cream, made fresh without chemical preservatives.</p>
           </article>
           <article className="value-card reveal">
-            <span className="value-icon">🍨</span>
             <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>Wide Sugar-Free Range</h3>
             <p>Indulge guilt-free with our carefully crafted selection of sugar-free delights.</p>
           </article>
           <article className="value-card reveal">
-            <span className="value-icon">✨</span>
             <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>Premium Ingredients</h3>
             <p>Crafted with premium, natural ingredients for an unforgettable experience.</p>
           </article>

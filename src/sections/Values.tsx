@@ -106,7 +106,6 @@ export default function Values() {
                 key={`${v.id}-${i}`} 
                 className={`value-card ${!isOriginal ? 'mobile-duplicate' : 'reveal'}`}
               >
-                <span className="value-icon">{v.icon}</span>
                 <h3>{v.title}</h3>
                 <p>{v.text}</p>
               </article>

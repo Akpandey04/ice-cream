@@ -2030,6 +2030,23 @@ main,
   .about-split-layout { gap: 2rem; }
   .flavour-page-card { gap: 2rem; }
   .value-grid { grid-template-columns: repeat(2, 1fr); }
+  
+  .about-scrollable-grid {
+    display: flex !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1.5rem;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    scrollbar-width: none;
+  }
+  .about-scrollable-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .about-scrollable-grid .value-card {
+    min-width: 85vw;
+    scroll-snap-align: center;
+  }
 }
 
 @media (max-width: 1024px) {

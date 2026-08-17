@@ -1,8 +1,6 @@
 export const values = [
-  { id: 1, icon: "*", title: "Premium Ingredients", text: "Fresh dairy, real fruit, roasted nuts, and chocolate with depth." },
-  { id: 2, icon: "H", title: "Handcrafted Recipes", text: "Each batch is balanced by taste, texture, and aroma." },
-  { id: 3, icon: "N", title: "No Artificial Colours", text: "Our colour comes from berries, mangoes, cocoa, and pistachios." },
-  { id: 4, icon: "C", title: "Rich Creamy Texture", text: "Slow-churned for that smooth, dense finish." },
-  { id: 5, icon: "S", title: "Sustainable Packaging", text: "Beautiful pints designed with lower-impact materials." },
-  { id: 6, icon: "F", title: "Freshly Made", text: "Small production runs keep every scoop bright and expressive." }
+  { id: 1, title: "No Artificial Colours", text: "We keep our ice creams 100% natural, without any artificial dyes." },
+  { id: 2, title: "No Preservatives", text: "Enjoy the authentic taste of ice cream, made fresh without chemical preservatives." },
+  { id: 3, title: "Wide Sugar-Free Range", text: "Indulge guilt-free with our carefully crafted selection of sugar-free delights." },
+  { id: 4, title: "Premium Ingredients", text: "Crafted with premium, natural ingredients for an unforgettable experience." }
 ];
