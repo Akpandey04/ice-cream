@@ -16,8 +16,9 @@ export default function Values({ title = "Premium where it matters, playful wher
         // Increased movement speed: ~0.9px per frame
         currentX.current -= 0.9;
         
-        const totalScrollWidth = trackRef.current.scrollWidth;
-        const singleSetWidth = totalScrollWidth / 3; // 3 identical sets
+        const firstCard = trackRef.current.children[0] as HTMLElement;
+        const gap = parseFloat(getComputedStyle(trackRef.current).gap) || 0;
+        const singleSetWidth = (firstCard.offsetWidth + gap) * values.length;
         
         // Seamless loop reset
         if (currentX.current <= -singleSetWidth) {
@@ -51,8 +52,9 @@ export default function Values({ title = "Premium where it matters, playful wher
     const dx = clientX - startX.current;
     currentX.current = lastX.current + dx;
     
-    const totalScrollWidth = trackRef.current.scrollWidth;
-    const singleSetWidth = totalScrollWidth / 3;
+    const firstCard = trackRef.current.children[0] as HTMLElement;
+    const gap = parseFloat(getComputedStyle(trackRef.current).gap) || 0;
+    const singleSetWidth = (firstCard.offsetWidth + gap) * values.length;
     
     // Loop during manual drag
     if (currentX.current <= -singleSetWidth) {
