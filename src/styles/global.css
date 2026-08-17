@@ -2268,10 +2268,7 @@ main,
   }
 }
 
-/* --- Desktop rules for Carousel --- */
-.value-card.mobile-duplicate {
-  display: none;
-}
+
 
 @media (max-width: 768px) {
   /* Mobile Why Choose Us Carousel */
@@ -2296,9 +2293,7 @@ main,
     min-width: 280px !important;
     max-width: 340px !important;
   }
-  .value-card.mobile-duplicate {
-    display: block !important;
-  }
+
 }
 
 /* --- Mobile Drawer (Hamburger Menu) Premium Overrides --- */
