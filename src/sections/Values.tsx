@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { values } from "../data/values";
 
-export default function Values() {
+export default function Values({ title = "Premium where it matters, playful where it shines.", eyebrow = "Why Choose Us" }: { title?: string, eyebrow?: string | null }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const requestRef = useRef<number | null>(null);
   const currentX = useRef(0);
@@ -83,9 +83,9 @@ export default function Values() {
 
   return (
     <section className="values section-panel" id="values">
-      <div className="section-heading reveal">
-        <p className="eyebrow">Why Choose Us</p>
-        <h2>Premium where it matters, playful where it shines.</h2>
+      <div className="section-heading reveal" style={title === "Why Choose ScoopyBloom?" ? { textAlign: "center", marginBottom: "4rem" } : {}}>
+        {eyebrow && <p className="eyebrow">{eyebrow}</p>}
+        <h2>{title}</h2>
       </div>
       <div className="value-carousel-wrapper">
         <div 

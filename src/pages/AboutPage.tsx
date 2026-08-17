@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import heroImage from "../assets/images/Rose Litchi Ice cream.png";
 import storyImage from "../assets/images/mango bloom.png";
 import promiseImage from "../assets/images/pistachio kunafa dream cup.png";
+import Values from "../sections/Values";
 
 export default function AboutPage() {
   useEffect(() => {
@@ -52,29 +53,7 @@ export default function AboutPage() {
       </section>
 
       {/* Section 2 — Why ScoopyBloom */}
-      <section className="section-panel reveal">
-        <div className="section-heading" style={{ textAlign: "center", marginBottom: "4rem" }}>
-          <h2>Why Choose ScoopyBloom?</h2>
-        </div>
-        <div className="value-grid about-scrollable-grid">
-          <article className="value-card reveal">
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.8rem' }}>No Artificial Colours</h3>
-            <p>We keep our ice creams 100% natural, without any artificial dyes.</p>
-          </article>
-          <article className="value-card reveal">
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.8rem' }}>No Preservatives</h3>
-            <p>Enjoy the authentic taste of ice cream, made fresh without chemical preservatives.</p>
-          </article>
-          <article className="value-card reveal">
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.8rem' }}>Wide Sugar-Free Range</h3>
-            <p>Indulge guilt-free with our carefully crafted selection of sugar-free delights.</p>
-          </article>
-          <article className="value-card reveal">
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.8rem' }}>Premium Ingredients</h3>
-            <p>Crafted with premium, natural ingredients for an unforgettable experience.</p>
-          </article>
-        </div>
-      </section>
+      <Values title="Why Choose ScoopyBloom?" eyebrow={null} />
 
       {/* Section 3 — Our Promise */}
       <section className="section-panel reveal">
