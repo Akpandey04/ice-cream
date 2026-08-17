@@ -11,14 +11,20 @@ export default function Values({ title = "Premium where it matters, playful wher
   const resumeTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
-    const animate = () => {
+    let lastTime = performance.now();
+
+    const animate = (time: number) => {
+      const dt = time - lastTime;
+      lastTime = time;
+
       if (!isDragging.current && trackRef.current) {
-        // Increased movement speed: ~0.9px per frame
-        currentX.current -= 0.9;
+        // Consistent speed regardless of refresh rate (~60px per second)
+        currentX.current -= dt * 0.06;
         
         const firstCard = trackRef.current.children[0] as HTMLElement;
         const gap = parseFloat(getComputedStyle(trackRef.current).gap) || 0;
-        const singleSetWidth = (firstCard.offsetWidth + gap) * values.length;
+        // getBoundingClientRect for subpixel precision prevents visual jumps
+        const singleSetWidth = (firstCard.getBoundingClientRect().width + gap) * values.length;
         
         // Seamless loop reset
         if (currentX.current <= -singleSetWidth) {
@@ -27,7 +33,8 @@ export default function Values({ title = "Premium where it matters, playful wher
           currentX.current -= singleSetWidth;
         }
 
-        trackRef.current.style.transform = `translateX(${currentX.current}px)`;
+        // Hardware acceleration for mobile
+        trackRef.current.style.transform = `translate3d(${currentX.current}px, 0, 0)`;
       }
       requestRef.current = requestAnimationFrame(animate);
     };
@@ -54,7 +61,7 @@ export default function Values({ title = "Premium where it matters, playful wher
     
     const firstCard = trackRef.current.children[0] as HTMLElement;
     const gap = parseFloat(getComputedStyle(trackRef.current).gap) || 0;
-    const singleSetWidth = (firstCard.offsetWidth + gap) * values.length;
+    const singleSetWidth = (firstCard.getBoundingClientRect().width + gap) * values.length;
     
     // Loop during manual drag
     if (currentX.current <= -singleSetWidth) {
@@ -65,13 +72,13 @@ export default function Values({ title = "Premium where it matters, playful wher
       lastX.current -= singleSetWidth;
     }
     
-    trackRef.current.style.transform = `translateX(${currentX.current}px)`;
+    trackRef.current.style.transform = `translate3d(${currentX.current}px, 0, 0)`;
   };
 
   const handleTouchEnd = () => {
     if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
     // Auto-resume after 2 seconds
-    resumeTimeoutRef.current = setTimeout(() => {
+    resumeTimeoutRef.current = window.setTimeout(() => {
       isDragging.current = false;
     }, 2000);
   };
