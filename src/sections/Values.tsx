@@ -18,8 +18,8 @@ export default function Values({ title = "Premium where it matters, playful wher
       lastTime = time;
 
       if (!isDragging.current && trackRef.current) {
-        // Increased speed as requested (~90px per second)
-        currentX.current -= dt * 0.09;
+        // Increased speed as requested (~120px per second)
+        currentX.current -= dt * 0.12;
         
         const card1 = trackRef.current.children[0] as HTMLElement;
         const card5 = trackRef.current.children[values.length] as HTMLElement;
@@ -104,11 +104,10 @@ export default function Values({ title = "Premium where it matters, playful wher
           onMouseLeave={handleTouchEnd}
         >
           {tripleValues.map((v, i) => {
-            const isOriginal = i < values.length;
             return (
               <article 
                 key={`${v.id}-${i}`} 
-                className={`value-card ${!isOriginal ? 'mobile-duplicate' : 'reveal'}`}
+                className="value-card"
               >
                 <h3>{v.title}</h3>
                 <p>{v.text}</p>
