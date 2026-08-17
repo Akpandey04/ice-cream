@@ -52,10 +52,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Section 2 — Why ScoopyBloom */}
-      <Values title="Why Choose ScoopyBloom?" eyebrow={null} />
-
-      {/* Section 3 — Our Promise */}
+      {/* Section 2 — Our Promise */}
       <section className="section-panel reveal">
         <div className="about-split-layout">
           <div className="about-split-content">
@@ -71,6 +68,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Section 3 — Why ScoopyBloom */}
+      <Values title="Why Choose ScoopyBloom?" eyebrow={null} />
 
 
 
