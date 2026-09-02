@@ -9,6 +9,8 @@ import butterScotchImg from "../assets/images/butter scotch.png";
 import jalebiPistachioImg from "../assets/images/jalebi pistachio crunch.png";
 import lemonImg from "../assets/images/lemon.png";
 import kachchaAamImg from "../assets/images/kachcha aam.png";
+import cocoMoguBloomImg from "../assets/images/coco mogu bloom.png";
+import tiramisuDotImg from "../assets/images/tiramisu dot.png";
 
 export const flavours = [
   { id: "mango", number: "01", name: "Mango Bloom", tag: "Seasonal", description: "A tropical blend of Alphonso mangoes folded into silky handcrafted ice cream for a refreshing summer delight.", stageHeading: "Mango Bloom", stageText: "A burst of tropical sunshine in every scoop.", image: mangoBloomImg, theme: ["#e5a92d", "#d18617", "#f9e0a0"] },
@@ -21,5 +23,7 @@ export const flavours = [
   { id: "mango", number: "08", name: "Butter Scotch", tag: "Bestseller", description: "Classic rich caramel cream embedded with deeply roasted praline crunch for a timeless experience.", stageHeading: "Butter Scotch", stageText: "A timeless classic reimagined.", image: butterScotchImg, theme: ["#d99c4c", "#bc7c2d", "#f5e2cc"] },
   { id: "mango", number: "09", name: "Jalebi Pistachio Crunch", tag: "Limited Edition", description: "Iconic sweet jalebi infused into rich saffron cream with a premium roasted pistachio finish.", stageHeading: "Jalebi Pistachio Crunch", stageText: "A majestic fusion of festive flavours.", image: jalebiPistachioImg, theme: ["#e39e3d", "#c77f22", "#f7ecd8"] },
   { id: "mango", number: "10", name: "Lemon", tag: "Seasonal", description: "Zesty, bright, and incredibly refreshing lemon citrus notes balanced with a soft cream base.", stageHeading: "Lemon", stageText: "Bright, zesty, and undeniably refreshing.", image: lemonImg, theme: ["#e8d15d", "#cfb638", "#fcf7da"] },
-  { id: "mango", number: "11", name: "Kachcha Aam", tag: "Seasonal", description: "Tangy raw mango swirled with a hint of spice, delivering an authentic nostalgic summer punch.", stageHeading: "Kachcha Aam", stageText: "A tangy, spicy summer nostalgia.", image: kachchaAamImg, theme: ["#8fa367", "#73874b", "#dce6ca"] }
+  { id: "mango", number: "11", name: "Kachcha Aam", tag: "Seasonal", description: "Tangy raw mango swirled with a hint of spice, delivering an authentic nostalgic summer punch.", stageHeading: "Kachcha Aam", stageText: "A tangy, spicy summer nostalgia.", image: kachchaAamImg, theme: ["#8fa367", "#73874b", "#dce6ca"] },
+  { id: "cocoa", number: "12", name: "Coco Mogu Bloom", tag: "Signature", description: "A rich and exotic blend of coconut and premium cocoa for a truly magnificent tropical dessert.", stageHeading: "Coco Mogu Bloom", stageText: "An exotic fusion of coconut and rich cocoa.", image: cocoMoguBloomImg, theme: ["#b58461", "#8f6244", "#f5e6dc"] },
+  { id: "berry", number: "13", name: "Tiramisu Dot", tag: "Chef's Choice", description: "Classic Italian tiramisu crafted into artisanal ice cream with roasted espresso and mascarpone cream.", stageHeading: "Tiramisu Dot", stageText: "An artisanal take on a classic Italian dessert.", image: tiramisuDotImg, theme: ["#d4bba3", "#a8896a", "#faf3ec"] }
 ];
