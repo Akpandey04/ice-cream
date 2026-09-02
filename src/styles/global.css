@@ -747,7 +747,8 @@ main,
 
 
 .product-card:hover,
-.product-card:focus-within {
+.product-card:focus-within,
+.product-card:active {
   transform: translateY(-0.55rem) rotateX(2deg);
   box-shadow: 0 30px 75px rgba(62, 29, 23, 0.18);
   border-color: rgba(200, 52, 97, 0.28);
@@ -764,7 +765,8 @@ main,
 }
 
 .product-card:hover .product-card__art,
-.product-card:focus-within .product-card__art {
+.product-card:focus-within .product-card__art,
+.product-card:active .product-card__art {
   transform: rotate(-2deg) scale(1.04);
 }
 
@@ -832,7 +834,8 @@ main,
 }
 
 .product-card:hover .product-card__button,
-.product-card:focus-within .product-card__button {
+.product-card:focus-within .product-card__button,
+.product-card:active .product-card__button {
   opacity: 1;
   transform: translateY(0);
 }
