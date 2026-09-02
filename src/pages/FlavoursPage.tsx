@@ -5,6 +5,23 @@ export default function FlavoursPage() {
   useEffect(() => {
     // Scroll to top when page mounts
     window.scrollTo(0, 0);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("touch-hover");
+        } else {
+          entry.target.classList.remove("touch-hover");
+        }
+      });
+    }, { threshold: 0.6 });
+
+    const cards = document.querySelectorAll(".flavour-page-card");
+    cards.forEach(card => observer.observe(card));
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (
