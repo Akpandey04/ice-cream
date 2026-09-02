@@ -1872,6 +1872,8 @@ main,
   .flavour-desc-main { display: none; }
   .flavour-desc-stage.mobile-only { order: 4; margin: 0 auto 2.5rem; max-width: 100%; font-size: 1.1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.85); }
   .mobile-flavour-image { order: 5; position: relative; width: 100%; max-width: 22rem; margin: 0 auto; filter: drop-shadow(0 24px 34px rgba(0, 0, 0, 0.3)); }
+  .mobile-flavour-image img { transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); transform: rotate(0deg) scale(0.95); }
+  .flavour-chapter.is-active .mobile-flavour-image img { transform: rotate(-4deg) scale(1.02); }
   .flavour-scroll { gap: 0; padding: 0 0 3rem; }
   .flavour-pack { display: none; }
   .story__visual { min-height: 24rem; }
